@@ -1,0 +1,102 @@
+/*first part styling of collection photo*/
+.collection-section {
+  background-image: url('/assets/images/woman.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  display: flex;
+  align-items: center;/*this is for vertical centring*/
+  justify-content: left;
+  width: 100%;
+}
+
+.collection-content {
+  margin-left: 6%;
+}
+
+.shop-now {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  background-color: #0056b3;
+  color: white;
+}
+.shop-now:hover{
+  background-color: #6084b6;
+}
+
+/*second container style*/
+.container {
+    margin-top: 40px;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    max-height: 35vh; 
+  }
+
+
+/*search bar style */
+
+#homepage-search-bar input {
+  margin: 30px 0 40px;
+  width: 100%; 
+  padding: 10px 15px; 
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  transition: border 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+/*category section style*/
+  .category-circle {
+    display: inline-block;
+    width: 130px; 
+    height: 130px;
+    border-radius: 50%;
+    border:2px solid #b5b7b9;
+    color: #000;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    cursor: pointer; 
+    transition: border 0.1s;
+  }
+  
+  .category-circle:hover {
+    border:3px solid  #0056b3; 
+    color: #0056b3;
+  }
+  .category-circle i {
+    font-size: 1.7rem;
+  }
+
+  /*media queries part*/
+  
+  @media (min-width: 1200px) {
+    .carousel-inner img {
+        max-width: 80%;    
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .product_listing{
+      max-width: 85%; 
+      margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 767px) {
+  .collection-content {
+    margin-left: 2%;
+    text-align: left;
+  }
+  .h2{
+    font-size: 0.5rem;
+  }
+  span{
+    display: block;
+  }
+}
+

@@ -1,0 +1,86 @@
+<div class="container">
+  <!---->
+  <section class="collection-section text-center mb-5">
+    <div class="collection-content">
+      <h4>Discover Latest Trends</h4>
+        <h2>AUTUMN COLLECTION <span>2024</span></h2>
+        <a href="#product_listing" class="btn btn-primary shop-now">Shop Now</a>
+    </div>
+  </section>
+
+  <!--First Slider part-->
+  <div id="offerSlider" class="carousel slide mb-5" data-bs-ride="carousel">
+    <h1 class="text-center mb-5">Special Offers</h1>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/1_slider.avif" class="d-block w-100" alt="Offer 1">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/2_Slider.avif" class="d-block w-100" alt="Offer 2">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/3_slider.avif" class="d-block w-100" alt="Offer 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#offerSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#offerSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <div class="container mb-5">
+    <!-- Category Filter part-->
+    <div class="mb-5">
+      <h1 class="text-center mb-5">Categories</h1>
+      <div class="row">
+        <div class="col-6 col-sm-4 col-md-4 col-lg-2 d-flex justify-content-center" *ngFor="let category of categories">
+          <span class="category-circle" (click)="filterProducts(category.name)">
+            <i [class]="category.icon"></i> {{ category.name }}
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+  <!--Product Listing Part-->
+    <div class="row product_listing" id="product_listing">
+      <h1 class="text-center mb-5 mt-5">Products</h1>
+      <div id="homepage-search-bar" class="mb-5">
+        <input type="text" [(ngModel)]="searchTerm" (input)="searchProducts()" placeholder="Search by name or category..." class="form-control" />
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-5 mx-0" *ngFor="let product of filteredProducts">
+        <app-product-card [product]="product"></app-product-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="">
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #327ec4;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: CTA -->
+      <section class="">
+        <p class="d-flex justify-content-center align-items-center">
+          <span class="me-3">Register for free</span>
+        
+        </p>
+      </section>
+      <!-- Section: CTA -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-white" href="https://TreandWear.com/">Treandwear.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</section>

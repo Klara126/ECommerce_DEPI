@@ -1,0 +1,64 @@
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333333; /* Darker, neutral color */
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #0056b3; /* Neutral text color */
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+}
+
+.form-check-input {
+    margin-top: 10px;
+    color:0056b3;
+}
+.form-check-label{
+    color: #555555;
+}
+
+.btn-checkout {
+    background-color: #333333; /* Neutral button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.btn-checkout:hover {
+    background-color: #555555; /* Slightly lighter hover effect */
+    cursor: pointer;
+}
+
+input[type="text"], select {
+    margin-bottom: 15px;
+    background-color: #f1f1f1;
+}
+
+.invalid-feedback {
+    color: red;
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    border-color: #0056b3; /* Blue highlight on focus */
+    box-shadow: none;
+}

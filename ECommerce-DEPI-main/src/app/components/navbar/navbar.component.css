@@ -1,0 +1,44 @@
+.navbar-custom {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    color: #7e7f80;
+    margin-bottom: 0;
+}
+
+.navbar-custom .navbar-brand {
+    color: #0056b3;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.navbar-custom .nav-link {
+    color: #7e7f80;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 1.5rem;
+    padding: 0.5rem 0.75rem;
+    transition: color 0.3s;
+}
+
+.navbar-custom .nav-link:hover,
+.icon-section i:hover {
+    color: #6084b6;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.btn-outline-light {
+    color: #0056b3;
+    border-color: #0056b3;
+    transition: background-color 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
